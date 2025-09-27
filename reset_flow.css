@@ -1,0 +1,8 @@
+Reset →
+  Векторска табела →
+    Reset_Handler →
+      ├─ Копирање .data:  Flash[__etext] → RAM[__data_start__ ... __data_end__]
+      ├─ Нулирање .bss:   RAM[__bss_start__ ... __bss_end__] = 0
+      ├─ Резервација .heap и .stack (симболи из linker.ld)
+      ├─ Позив SystemInit()
+      └─ Позив main()
